@@ -1,11 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 func main() {
 	fmt.Println("Hello Go")
 }
 
-func fizzbuzz(input any) string {
-	return "1"
+func fizzbuzz(input int) string {
+	return strconv.Itoa(input)
 }
