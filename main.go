@@ -10,7 +10,7 @@ func main() {
 }
 
 func fizzbuzz(input int) string {
-	if input == 3 {
+	if input%3 == 0 {
 		return "Fizz"
 	}
 
