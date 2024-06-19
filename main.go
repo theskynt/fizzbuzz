@@ -10,16 +10,11 @@ func main() {
 }
 
 func fizzbuzz(input int) string {
-
-	if input%3 == 0 && input%5 == 0 {
-		return "Fizzbuzz"
-	}
-	if input%3 == 0 {
-		return "Fizz"
-	}
-
-	if input%5 == 0 {
-		return "Buzz"
-	}
-	return strconv.Itoa(input)
+	result := ""
+    result += map[bool]string{true: "Fizz"}[input%3 == 0]
+    result += map[bool]string{true: "Buzz"}[input%5 == 0]
+    if result == "" {
+        result = strconv.Itoa(input)
+    }
+	return result
 }
