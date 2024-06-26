@@ -87,19 +87,19 @@ func TestFizzbuzz(t *testing.T) {
 		}
 	})
 
-	// t.Run("should return 7 when input is 7", func(t *testing.T) {
-	// 	// Arrange
-	// 	input := 7
-	// 	want := "7"
+	t.Run("should return 7 when input is 7", func(t *testing.T) {
+		// Arrange
+		input := 7
+		want := "7"
 
-	// 	// Act
-	// 	got := fizzbuzz(input)
+		// Act
+		got := fizzbuzz(input)
 
-	// 	// Assert
-	// 	if got != want {
-	// 		t.Errorf("want %v , but got %v", want, got)
-	// 	}
-	// })
+		// Assert
+		if got != want {
+			t.Errorf("want %v , but got %v", want, got)
+		}
+	})
 
 	// t.Run("should return 8 when input is 8", func(t *testing.T) {
 	// 	// Arrange
