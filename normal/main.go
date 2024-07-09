@@ -1,5 +1,7 @@
 package main
 
+import "strconv"
+
 func fizzbuzz(input int) string {
-	return "1"
+	return strconv.Itoa(input)
 }
