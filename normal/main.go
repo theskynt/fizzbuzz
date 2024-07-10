@@ -3,7 +3,7 @@ package main
 import "strconv"
 
 func fizzbuzz(input int) string {
-	if input == 3 {
+	if input%3 == 0 {
 		return "Fizz"
 	}
 	if input == 5 {
