@@ -3,8 +3,11 @@ package main
 import "strconv"
 
 func fizzbuzz(n int) string {
-	if n == 3 {
-		return "Fizz"
+	got := ""
+	got += map[bool]string{true: "Fizz"}[n == 3]
+	got += map[bool]string{true: "Buzz"}[n == 5]
+	if got == "" {
+		got = strconv.Itoa(n)
 	}
-	return strconv.Itoa(n)
+	return got
 }
